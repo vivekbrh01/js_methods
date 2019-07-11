@@ -5,7 +5,7 @@ const got = {
       wikiLink: "http://gameofthrones.wikia.com/wiki/House_Stark",
       people: [
         {
-          name: 'Eddard "Ned" Stark',
+          name: "Eddard Stark",
           description:
             "Lord of Winterfell - Warden of the North - Hand of the King - Married to Catelyn (Tully) Stark",
           image:
@@ -43,7 +43,7 @@ const got = {
           wikiLink: "http://gameofthrones.wikia.com/wiki/Arya_Stark"
         },
         {
-          name: 'Brandon "Bran" Stark',
+          name: "Brandon Stark",
           description: "Son of Eddard and Catelyn Stark - Direwolf: Summer",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-brandon-stark.jpg",
@@ -93,7 +93,7 @@ const got = {
           wikiLink: "http://gameofthrones.wikia.com/wiki/Jaime_Lannister"
         },
         {
-          name: "Queen Cersei (Lannister) Baratheon",
+          name: "Cersei Baratheon",
           description:
             "Married to King Robert Baratheon - Daughter of Tywin Lannister",
           image:
@@ -107,7 +107,7 @@ const got = {
       wikiLink: "http://gameofthrones.wikia.com/wiki/House_Baratheon",
       people: [
         {
-          name: "King Robert Baratheon",
+          name: "Robert Baratheon",
           description: "The first of his name - Lord of the Seven Kingdoms",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-robert-baratheon.jpg",
@@ -208,7 +208,7 @@ const got = {
       wikiLink: "http://gameofthrones.wikia.com/wiki/House_Tyrell",
       people: [
         {
-          name: "Margaery (Tyrell) Baratheon",
+          name: "Margaery Baratheon",
           description:
             "Wife of Renly Baratheon - Sister of Loras Tyrell - Granddaughter of Olenna Tyrell",
           image:
@@ -230,14 +230,14 @@ const got = {
       wikiLink: "http://gameofthrones.wikia.com/wiki/House_Tully",
       people: [
         {
-          name: "Catelyn (Tully) Stark",
+          name: "Catelyn Stark",
           description: "Married to Eddard Stark - Daughter of Hoster Tully",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-catelyn-tully.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Catelyn_Tully"
         },
         {
-          name: "Lysa (Tully) Arryn",
+          name: "Lysa Arryn",
           description: "Widow of Jon Arryn - Daughter of Hoster Tully",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-lysa-tully.jpg",
@@ -265,7 +265,7 @@ const got = {
       wikiLink: "http://gameofthrones.wikia.com/wiki/House_Redwyne",
       people: [
         {
-          name: "Olenna (Redwyne) Tyrell",
+          name: "Olenna Tyrell",
           description: "Matriarch of House Tyrell - Queen of Thorns",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-olenna-tyrell.jpg",
