@@ -1,38 +1,41 @@
 var data = [
   {
-    name: 'Butters',
+    name: "Butters",
     age: 3,
-    type: 'dog'
+    type: "dog"
   },
   {
-    name: 'Lizzy',
+    name: "Lizzy",
     age: 6,
-    type: 'dog'
+    type: "dog"
   },
   {
-    name: 'Red',
+    name: "Red",
     age: 1,
-    type: 'cat'
+    type: "cat"
   },
   {
-    name: 'Joey',
+    name: "Joey",
     age: 3,
-    type: 'dog'
+    type: "dog"
   },
-   {
-    name: 'Pochi',
+  {
+    name: "Pochi",
     age: 3,
-    type: 'dog'
+    type: "dog"
   }
 ];
 
 // write a function that will sum all of the dogs ages in dog years using for loop.
 // 1 human year = 7 dog year
-// Solution is 105
 
+// your code goes here
+
+// Solution is 105
 
 // Write the same function using
 // 1. filter - for filtering the cat or dog
 // 2. map - to multiply human year to dog year
 // 3. reduce - to accumulate total age.
+
 // Solution 105
