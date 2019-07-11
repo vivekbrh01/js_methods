@@ -17,4 +17,4 @@
 
 - 8. Write a function called `everyone` which returns a array of names of all the people in `got` variable.
 
-- 9. Solve all the above with `reduce` array method. Make different method.
+- 9. Solve all the above functions with `reduce` array method. Make different method for all.
