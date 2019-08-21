@@ -3,6 +3,10 @@
 // forEach
 // filter
 // splics
+// reduce
+// etc ..
+
+// Write atleast 10 different question for every method.
 
 var pizzas = [
   "Deep Dish",
