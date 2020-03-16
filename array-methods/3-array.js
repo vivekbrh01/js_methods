@@ -15,6 +15,19 @@ var words = [
 // Write a function uniqueArray that receives an array of words as a parameter. And remove the duplicates, and return a new array. 
 // (indexOf)
 
+function uniqueArray (arr) {
+  let newArray = [];
+  
+  for (i = 0; i < arr.length; i++) {
+    if(newArray.indexOf(arr[i]) === -1) {
+      newArray.push(arr[i]);
+    }
+  }
+  return newArray;
+} 
+
+let wordsArray = uniqueArray(words);
+console.log(wordsArray);
 
 
 var words2 = [
@@ -31,6 +44,14 @@ var words2 = [
 // Write a function doesWordExist that will take in an array of words as one argument, and a word to search for as the other. Return true if it exists, otherwise, return false. Don't use indexOf for this one.
 
 
+function doesWordExist(arr, obj) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == obj) return true;
+  }
+}
+
+console.log(doesWordExist(words2, "subsets"));
+console.log(doesWordExist(words2, "subset"));
 
 
 var words3 = [
@@ -51,7 +72,12 @@ var words3 = [
 // Write a function howManyTimes that will take in an array of words as one argument, and a word to search for as the other. The function will return the number of times that word appears in the array.
 
 
+function howManyTimes(array, value) {
+  return array.filter( (v) => (v === value) ).length;
+}
 
+console.log( howManyTimes(words3, "matter") );  // 4
+console.log( howManyTimes(words3, "machine") ); // 1
 
 
 // Using the reduce() method, how would you sum up the population of every country except China?
@@ -74,6 +100,18 @@ let data = [
   }
 ]
 
+let sumOfPopulation = data.reduce( (acc, cv) => {
+
+  if(cv.country != 'China') {
+    acc += cv.pop;
+  }
+
+  return acc;
+}, 0);
+
+console.log(sumOfPopulation);
+
+
 
 // Use reduce method and summorize the collection like
 // { banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1 }
@@ -91,7 +129,16 @@ const fruitBasket = [
   'fig'
 ];
 
+let newObj = {};
+let result = (fruitBasket.reduce ( ( acc, cv) => {
+  if(Object.keys(newObj).indexOf(cv) != -1) {
+    newObj[cv]++;
+  } else { 
+    newObj[cv] = 1;
+  } return newObj;
 
+}, newObj));
+console.log(result);
 
 // Bonus Question (Solve only if you have time)
 var matrix = [
