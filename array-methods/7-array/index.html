@@ -10,37 +10,91 @@
     <script src="./data.js"></script>
     <script>
       // Go through todo.md before start solving.
+
       function countAllPeople() {
+
         // your code goes here
-        console.log(got);
+        return got.houses.reduce( function(acc, house, index) {
+          acc = acc + house.people.length;
+          return acc;
+        }, 0);
       }
 
       function peopleByHouses() {
         // your code goes here
+         
+        return  got.houses.reduce( (acc, house) => {
+          acc[house.name] = house.people.length;
+          return acc;
+        }, {});
       }
 
       function everyone() {
         // your code goes here
+
+        return got.houses.reduce( (acc, house) => {
+          acc = acc.concat(house.people.map ( p => p.name));
+          return acc;
+        }, []);
       }
 
       function nameWithS() {
         // your code goes here
+
+        return got.houses.reduce( (acc, house) => {
+          acc = acc.concat(
+            house.people.map( p => p.name ).filter(n => n.toLowerCase().includes('s') )
+          );
+          return acc;
+        }, []);
       }
 
       function nameWithA() {
         // your code goes here
+
+        return got.houses.reduce( (acc, house) => {
+          acc = acc.concat(
+            house.people.map( p => p.name ).filter(n => n.toLowerCase().includes('a') )
+          );
+          return acc;
+        }, []);
       }
 
       function surnameWithS() {
         // your code goes here
+
+        return got.houses.reduce((acc, house) => {
+         house.people.forEach(e => {
+            let surname = e.name.split(' ')[1];
+            if( surname.startsWith('S') ) {
+              acc.push(e.name);
+            }
+          });
+          return acc;
+        }, []);
       }
 
       function surnameWithA() {
         // your code goes here
+
+        return got.houses.reduce((acc, house) => {
+         house.people.forEach(e => {
+            let surname = e.name.split(' ')[1];
+            if( surname.startsWith('A') ) {
+              acc.push(e.name);
+            }
+          });
+          return acc;
+        }, []);
       }
 
       function peopleNameOfAllHouses() {
         // your code goes here
+        
+        return got.houses.reduce( (acc, house) => {
+          acc[house.name] = house.people.map( e => e.name)
+          return acc;
+        });
       }
 
       // Testing your result after writing your function
